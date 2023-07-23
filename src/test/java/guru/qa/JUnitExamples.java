@@ -3,7 +3,7 @@ package guru.qa;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class JUnit5Examples {
+public class JUnitExamples {
 
     @Test
     void firstTest() {
