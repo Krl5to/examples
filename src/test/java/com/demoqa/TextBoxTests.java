@@ -7,20 +7,21 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+// import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class TextBoxTests {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = "firefox";
+//        Configuration.browser = "firefox";
+        Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
     }
 
     @Test
     void fillFormTest() {
         open ("/text-box");
-        getWebDriver().manage().window().maximize();
+//        getWebDriver().manage().window().maximize();
 
         $("#userName").setValue("Petr Ivanov");
         $("#userEmail").setValue("Petr_Ivanov@mail.ru");
